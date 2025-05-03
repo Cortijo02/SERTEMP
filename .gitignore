@@ -174,4 +174,4 @@ cython_debug/
 .pypirc
 
 *.parquet
-*.csv
+target_channels.csv
