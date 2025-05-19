@@ -2,7 +2,7 @@ version: "3.8"
 services:
   tune-sis-recomender:
     build:
-      context: .  # Directorio de construcción
+      context: .  
       dockerfile: Dockerfile
     gpus:
       - driver: nvidia
@@ -15,6 +15,6 @@ services:
       - .:/app
     environment:
       - PYTHONUNBUFFERED=1  
-      - CUDA_VISIBLE_DEVICES=0 
+      - CUDA_VISIBLE_DEVICES=0 # No tengo más soy pobre
     ports:
       - "1234:1234"
